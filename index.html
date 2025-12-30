@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMG-OFFICIAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" class="logo">
+    <h1>BMG-OFFICIAL</h1>
+    <p class="tagline">The pitch is ours</p>
+</header>
+
+<section class="club-info">
+    <h2>Club Management</h2>
+    <input type="text" placeholder="Captain Name" id="captain">
+    <input type="text" placeholder="Vice Captain Name" id="viceCaptain">
+    <input type="text" placeholder="President Name" id="president">
+</section>
+
+<section class="player-form">
+    <h2>Add Player</h2>
+    <input type="text" id="pname" placeholder="Player Name">
+    <input type="text" id="phone" placeholder="Phone Number">
+    <input type="text" id="address" placeholder="Address">
+    <input type="number" id="played" placeholder="Matches Played">
+    <input type="number" id="win" placeholder="Wins">
+    <input type="number" id="draw" placeholder="Draws">
+    <input type="number" id="loss" placeholder="Losses">
+    <button onclick="addPlayer()">Add Player</button>
+</section>
+
+<section class="table-section">
+    <h2>Player Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Played</th>
+                <th>Win</th>
+                <th>Draw</th>
+                <th>Loss</th>
+                <th>Win %</th>
+            </tr>
+        </thead>
+        <tbody id="playerTable"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
